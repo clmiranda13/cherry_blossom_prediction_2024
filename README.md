@@ -19,15 +19,15 @@ https://ebird.org/data/download/ebd
 
 Separate requests were made for each region using search:
 
-#washingtondc: District of Columbia, United States (US)
+\twashingtondc: District of Columbia, United States (US)
 
-#liestal: Basel-Landschaft, Switzerland (CH)
+liestal: Basel-Landschaft, Switzerland (CH)
 
-#kyoto: Kyoto, Japan (JP)
+kyoto: Kyoto, Japan (JP)
 
-#vancouver: British Columbia, Canada (CA)
+vancouver: British Columbia, Canada (CA)
 
-#newyorkcity: New York, New York, United States (US)
+newyorkcity: New York, New York, United States (US)
 
 Date range: December 1, 1999 to February 16, 2024
 All species were used.
@@ -46,10 +46,10 @@ Another way to differentiate the files is by looking at the file size; the file 
 Example using Liestal data:
 
 
-#Data containing counts: 'ebd_CH-BL_199912_202403_smp_relJan-2024.txt'
+Data containing counts: 'ebd_CH-BL_199912_202403_smp_relJan-2024.txt'
 
 
-#Sampling data: 'ebd_CH-BL_199912_202403_smp_relJan-2024_sampling.txt'
+Sampling data: 'ebd_CH-BL_199912_202403_smp_relJan-2024_sampling.txt'
 
 After identifying the proper datasets, create a folder in your R project titled 'eBird'.
 Copy the data containing counts into the 'eBird' folder.
