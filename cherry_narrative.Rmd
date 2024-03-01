@@ -1,0 +1,41 @@
+---
+title: Using temperature and animal behavior data to predict the timing of cherry
+  blossoms
+output: pdf_document
+date: "2024-03-01"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+With plant development shown to be highly sensitive to drastic changes in temperature, it is important to consider the effects of climate change in our model. Growing degree days (GDD) is calculated using temperature data and base temperature, the temperature below which plant growth is zero. This is a standard reference for farmers to assess crop development and is used in our model. Yet, with drastic temperature changes due to climate change, it is important to observe average high and low temperatures during winter. While GDD is certainly dependent on these values, average highs and lows during a given month can help track drastic changes in temperature. Note that in recent years, periods of unseasonable warming have resulted in occurrences of false springs, phases in late winter or early spring in which plants and animals awaken early from dormancy only to be exposed to a sudden return to cold temperatures.
+
+
+
+Along with temperature-related data, the model incorporates animal behavior data to make predictions. A fundamental characteristic of living organisms is the ability to respond and adapt to changing environments. Though the phenology of cherry blossoms is the primary focus of this competition, we can use repeated biological events in the form of animal behavior as predictors since these are also dependent on changing climate. To simulate the effects of false springs, the model also considers bird sighting data and Groundhog Day results. With cherry blossoms being dependent on the temperatures of months prior to bloom, these variables —being related to false springs— can prove effective in predicting bloom dates.
+
+
+
+However, before exploring further, the model must take into account the starting year for observations.
+
+
+
+A 2011 study by Abu et al. seeking to predict the timing of cherry blossoms states that cherry blossom trees, along with 88 out of 100 observed plant species in the Washington D.C. area, have shown significant changes in phenology between 1970 and 1999, with first-flowering occurring 4.5 days earlier than normal. With false springs occurring more often in recent years, I wanted to expand upon the study conducted by Abu et al. As such, the model considers historic data starting from December 1st, 1999 — described as the start of the first winter month of 2000 in our model — in its predictions for all cities.
+
+
+
+So as with other deciduous plants, cherry trees require a certain level of heat accumulation for proper blooming. GDD is a common measure of heat accumulation used to predict a plant’s pace towards maturity. With cherry blossoms having a reported base temperature of 45°F, daily growing degree values in this model are calculated by subtracting 45 degrees from daily average temperatures; negative values are counted as zero. GDD is accumulated by taking the sum of daily growing degree values throughout the season. 
+
+
+
+Migratory birds largely rely on their internal biological clocks to determine their migration patterns. However, their movements are also influenced by weather conditions as warming climates in recent years have yielded earlier migration, much at fault of false springs. This phenomenon not only disrupts the timing of animal migration but also its overall success; unseasonable temperature changes may directly kill migratory birds both shortly after arriving in breeding areas and before departing from breeding areas. The sum of bird counts during the winter months prior to cherry blossoms can help signify periods of extreme fluctuation in temperature: higher counts indicating years of “normal” temperatures and lower counts indicating occurrences of false springs. 
+
+
+
+While largely considered as pseudoscience, the small timeframe between Groundhog Day and the spring equinox allows a fluid interpretation for an “early spring”. If we compare bird counts in Washington D.C. to Groundhog Day results over the last four years, bird counts have decreased by 58% while Punxsutawney Phil observed its shadow three times, suggesting that Groundhog Day results may also be associated with false springs. 
+
+
+
+With the increasing frequency of false springs in recent years, using data that simulate extreme temperature changes is more relevant in predicting the timing of cherry blossoms. Though strictly analyzing temperature data is certainly effective, including animal behavior as predictors helps measure biological responses to changes in environment. 
+
