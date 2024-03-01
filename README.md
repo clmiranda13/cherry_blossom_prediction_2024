@@ -19,7 +19,7 @@ https://ebird.org/data/download/ebd
 
 Separate requests were made for each region using search:
 
-\twashingtondc: District of Columbia, United States (US)
+washingtondc: District of Columbia, United States (US)
 
 liestal: Basel-Landschaft, Switzerland (CH)
 
