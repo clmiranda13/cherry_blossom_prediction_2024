@@ -57,19 +57,19 @@ Copy the data containing counts into the 'eBird' folder.
 The datasets were renamed according to their region codes to make reading easier:
 
 
-#washingtondc: 'US_DC.txt'
+washingtondc: 'US_DC.txt'
 
 
-#liestal: Basel-Landschaft, 'CH_BL.txt'
+liestal: Basel-Landschaft, 'CH_BL.txt'
 
 
-#kyoto: 'JP.txt'
+kyoto: 'JP.txt'
 
 
-#vancouver: 'CA_BC.txt'
+vancouver: 'CA_BC.txt'
 
 
-#newyorkcity: 'US_NY.txt'
+newyorkcity: 'US_NY.txt'
 
 
 
