@@ -91,7 +91,7 @@ eBird does not have specific data for Liestal, and Basel-Landschaft was used ins
 While eBird does have data for the city of Kyoto, the data obtained using the search 'Kyoto, Japan (JP)' gives observations for Kyoto Prefecture (or "state"). I did not know there was a difference, so a filter by "COUNTY" was conducted in the R code to specify Kyoto city. If you would like to skip this step for your replication, you can instead use the search 'Kyoto, Kyoto, Japan (JP)' when making the eBird request; however, this would require editing the R code.
 
 
-Similar to Liestal, there is no specified data for Vancouver that I know of in eBird, so the dataset for the entirety of British Columbia was downloaded. I mention this because this is an extremely large dataset (over 6 million rows) and may take around 30 minutes to read into R. To specify to Vancouver, I also used a "COUNTY" filter for "Metro Vancouver", as mention in the block comments of the code.
+Similar to Liestal, there is no specified data for Vancouver that I know of in eBird, so the dataset for the entirety of British Columbia was downloaded. I mention this because this is an extremely large dataset (over 6 million rows) and may take around 30 minutes to read into R. To specify to Vancouver, I also used a "COUNTY" filter for "Metro Vancouver", as mentioned in the block comments of the code.
 
 
 
